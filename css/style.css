@@ -1,0 +1,91 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #2D3436;
+    --gray-dark-64: #5C5C5C;
+    --gray-dark-48: #858585;
+    --gray-dark-32: #ADADAD;
+    --gray-dark-24: #C2C2C2;
+
+    --color-blue-dark: #0984E3;
+    --color-blue-light: #74B9FF;
+
+    --color-green-dark: #00B894;
+    --color-green-light: #55EFC4;
+
+    --color-yellow-dark: #FDCB6E;
+    --color-yellow-light: #FFEAA7;
+
+    --color-red-dark: #D63031;
+    --color-red-light: #FF7675;
+
+    --color-purple-dark: #6C5CE7;
+    --color-purple-light: #A29BFE;
+
+    --color-purple-pink: #E84393;
+    --color-purple-pink: #FD79A8;
+
+    --animation-speed: .3s;
+    --animation-func: ease;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    padding: 16px 130px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid var(--gray-dark-32);
+}
+
+.header-logo {
+    display: flex;
+    align-content: center;
+}
+
+.header-logo-title {
+    font-size: 48px;
+
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+ 
+}
+
+.header-button {
+    width: 170px;
+    height: 64px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-purple-dark);
+    outline: none;
+    transition: color var(--animation-speed) var(--animation-func);
+}
+
+.header-link-active {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header__link:hover,
+.header__link:focus {
+    color: var(--color-purple-light);
+
+}
+
+.header-link-point {
+    background: var(--color-yellow-dark);
+    height: 9px;
+    width: 9px;
+    margin: 0 16px;
+    border-radius: 50%;
+}
